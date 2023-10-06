@@ -1,0 +1,188 @@
+.header {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(72, 72, 72, 0.642),
+      rgba(0, 0, 0, 0.818)
+    ),
+    url("../../images/background.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+.header_child {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+.content {
+  text-align: center;
+  height: 300px;
+}
+
+.content h1 {
+  font-size: 80px;
+  font-weight: 700;
+  margin-bottom: -10px;
+  margin-top: -10px;
+}
+.content h3 {
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+.content h4 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 60px;
+  letter-spacing: 4px;
+}
+.content a {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid grey;
+  padding: 10px 16px 10px 16px;
+  background-color: #4e4e4e70;
+  transition: 0.3s;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 4px;
+}
+.btn:hover {
+  background: #cecdcd;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 6px;
+}
+@media (max-width: 570px) {
+  .content h1 {
+    font-size: 50px;
+  }
+  .content h3 {
+    font-size: 20px;
+  }
+  .content .btn {
+    font-size: 16px;
+  }
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+}
+.card-1 {
+  width: 45%;
+  background: #870000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #190a05,
+    #870000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #190a05,
+    #870000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px 40px 20px;
+  border-radius: 4px;
+}
+
+.card-1 h3{
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2px;
+
+}
+.card-1 h1{
+  font-size: 33px;
+  margin-bottom: -5px;
+  letter-spacing: 3px;
+}
+.card-1 h4{
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+
+}
+.card-1 a{
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid grey;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+.card-2 {
+  width: 45%;
+  background: #780206; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #061161,
+    #780206
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #061161,
+    #780206
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px 40px 20px;
+  border-radius: 4px;
+}
+.card-2 h3{
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2px;
+
+}
+.card-2 h1{
+  font-size: 33px;
+  margin-bottom: -5px;
+  letter-spacing: 3px;
+}
+.card-2 h4{
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+
+}
+.card-2 a{
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid grey;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+@media (max-width:1099px){
+.card-1 h1, .card-2 h1{
+font-size: 25px;
+}
+.card-1 h3, .card-2 h3, .card-1 a, .card-2 a{
+  font-size: 15px;
+}
+.card-1 h4, .card-2 h4{
+  font-size: 15px;
+}
+
+}
+@media (max-width: 1042px){
+  .cards{
+  width: 90%;
+  }
+}
+@media(max-width: 918px){
+  .cards{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .card-1, .card-2 {
+    width: 90%;
+  }
+}

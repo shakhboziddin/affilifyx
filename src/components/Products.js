@@ -2,17 +2,22 @@ import React, { useContext } from "react";
 import { ProductsContext } from "../global/ProductsContext";
 import "./css/Products.css";
 import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function Products() {
   const { products } = useContext(ProductsContext);
   console.log(products);
 
   useEffect(() => {}, []);
+  useEffect(() => {
+    Aos.init();
+  }, []);
 
   return (
     <>
       {products.length !== 0 && <h1>Products</h1>}
-      <div className="products-container">
+      <div className="products-container" data-aos="fade-up">
         {products.length === 0 && <div>Loading...</div>}
         {products.map((product) => (
           <div className="product-card" key={product.ProductID}>
