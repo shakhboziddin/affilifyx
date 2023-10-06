@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import Products from "./Products";
 import "./css/Home.css";
 import Aos from "aos";
-import 'aos/dist/aos.css'
+import "aos/dist/aos.css";
 function Home() {
-  useEffect(()=>{
-    Aos.init()
-  }, [])
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <div>
       <section className="header">
@@ -23,14 +23,14 @@ function Home() {
       </section>
 
       <section className="cards">
-        <div className="card-1" data-aos='fade-up-right'>
+        <div className="card-1" data-aos="fade-right">
           <h3>Low Price</h3>
           <h1>High Coziness</h1>
           <h4>UPTO 50% OFF</h4>
-          
+
           <a href="#products">Explore Items</a>
         </div>
-        <div className="card-2" data-aos='fade-up-left'>
+        <div className="card-2" data-aos="fade-left">
           <h3>Low Price</h3>
           <h1>High Coziness</h1>
           <h4>UPTO 50% OFF</h4>
