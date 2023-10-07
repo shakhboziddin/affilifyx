@@ -8,12 +8,14 @@ const Navbar = () => {
   return (
     <div>
       <div className="nav-bar-container-light">
-        <h4 className="logo">AFFILIFYX</h4>
+        <Link to={"/"} className="logo">
+          AFFILIFYX
+        </Link>
         <ul className="middle-items">
           <li className="list-item">
-            <Link to="/" className="link-light">
+            <a href="#products" className="link-light">
               Shop
-            </Link>
+            </a>
           </li>
           <li className="list-item">
             <Link to="/about" className="link-light">

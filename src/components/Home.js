@@ -31,15 +31,15 @@ function Home() {
           <a href="#products">Explore Items</a>
         </div>
         <div className="card-2" data-aos="fade-left">
-          <h3>Low Price</h3>
-          <h1>High Coziness</h1>
+          <h3>Beyoung Presents</h3>
+          <h1>Breezy Autumn Style</h1>
           <h4>UPTO 50% OFF</h4>
 
           <a href="#products">Explore Items</a>
         </div>
       </section>
 
-      <section className="#products">
+      <section className="products" id="products">
         <Products />
       </section>
     </div>

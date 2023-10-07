@@ -16,7 +16,7 @@ function Products() {
 
   return (
     <>
-      {products.length !== 0 && <h1>Products</h1>}
+      {products.length !== 0 && <h1 className="head">Products</h1>}
       <div className="products-container" data-aos="fade-up">
         {products.length === 0 && <div>Loading...</div>}
         {products.map((product) => (
@@ -25,8 +25,10 @@ function Products() {
               <div className="product-img">
                 <img src={product.ProductImg} alt="not found" />
               </div>
-              <div className="product-name">{product.ProductName}</div>
-              <div className="product-price">${product.ProductPrice}.00</div>
+              <div className="info">
+                <div className="product-name">{product.ProductName}</div>
+                <div className="product-price">${product.ProductPrice}.00</div>
+              </div>
               <button className="addcart-btn">Buy</button>
             </a>
           </div>

@@ -6,20 +6,24 @@
   align-items: center;
   width: 100%;
   color: #3c4242;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.949);
   border-bottom-style: solid;
-  border-bottom-color: #202de048;
-  border-bottom-width: 2px;
+  border-bottom-color: #00021748;
+  border-bottom-width: 1px;
   height: 80px;
   margin-bottom: 0;
   position: fixed;
   top: 0px;
   z-index: 99999;
+  
 }
 
 .logo {
   font-size: 30px;
   margin-left: 10px;
+  text-decoration: none;
+  color: #333333;
+  font-weight: 700;
 }
 
 .middle-items {
@@ -79,3 +83,4 @@
     width: 100%;
   }
 }
+

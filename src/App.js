@@ -6,6 +6,7 @@ import { AddProducts } from "./components/Admin";
 import NotFound from "./components/NotFound";
 import { ProductsContextProvider } from "./global/ProductsContext";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/adminPage" Component={AddProducts} />
           <Route path="/*" Component={NotFound} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </ProductsContextProvider>
   );
