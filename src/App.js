@@ -7,6 +7,14 @@ import NotFound from "./components/NotFound";
 import { ProductsContextProvider } from "./global/ProductsContext";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ReactGa from 'react-ga'
+
+
+const TRACKING_ID = 'G-LYWS7SZRY5'
+ReactGa.initialize(TRACKING_ID)
+
+
+
 
 function App() {
   return (
