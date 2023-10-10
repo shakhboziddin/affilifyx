@@ -6,6 +6,7 @@ export const AddProducts = () => {
   const [productPrice, setProductPrice] = useState(0);
   const [productImg, setProductImg] = useState(null);
   const [productLink, setProductLink] = useState("");
+  const [productCategory, setProductCategory] = useState('')
   const [error, setError] = useState("");
 
   const types = ["image/png", "image/jpeg"]; // image types
@@ -48,6 +49,7 @@ export const AddProducts = () => {
                 ProductPrice: Number(productPrice),
                 ProductImg: url,
                 ProductLink: productLink,
+                productCategory: productCategory,
               })
               .then(() => {
                 setProductName("");
@@ -55,6 +57,7 @@ export const AddProducts = () => {
                 setProductImg("");
                 setError("");
                 setProductLink("");
+                setProductCategory("")
                 document.getElementById("file").value = "";
               })
               .catch((err) => setError(err.message));
@@ -103,6 +106,15 @@ export const AddProducts = () => {
           required
           onChange={(e) => setProductLink(e.target.value)}
           value={productLink}
+        />
+        <br />
+        <label htmlFor="product-category">Product Category (men or woman)</label>
+                <input
+          type="text"
+          className="form-control"
+          required
+          onChange={(e) => setProductCategory(e.target.value)}
+          value={productCategory}
         />
         <br />
         <button type="submit" className="btn btn-success btn-md mybtn">
